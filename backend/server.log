@@ -1,7 +1,0 @@
-INFO:main:Chat router loaded successfully
-INFO:     Started server process [8076]
-INFO:     Waiting for application startup.
-INFO:main:Initializing database tables...
-INFO:main:Database tables initialized successfully
-INFO:     Application startup complete.
-INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)

@@ -1,3 +1,14 @@
+---
+title: FastAPI Backend
+emoji: 🚀
+colorFrom: blue
+colorTo: purple
+sdk: docker
+pinned: false
+---
+
+
+
 # Todo Backend API
 
 A complete, production-ready, secure Python FastAPI backend for a multi-user Todo application. The backend provides user registration with secure password hashing, JWT token verification for Better Auth frontend integration, and comprehensive task CRUD operations with strict ownership enforcement.
