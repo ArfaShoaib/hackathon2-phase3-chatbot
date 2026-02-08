@@ -23,7 +23,14 @@ app = FastAPI(title="Todo Backend API", version="1.0.0")
 # Configure CORS middleware for Next.js frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://localhost:3001", "http://127.0.0.1:3000", "http://127.0.0.1:3001"],  # Allow frontend origins including alternative localhost addresses
+    allow_origins=[
+        "http://localhost:3000", 
+        "http://localhost:3001", 
+        "http://127.0.0.1:3000", 
+        "http://127.0.0.1:3001",
+        "https://hackathon2-phase3-chatbot.vercel.app",  # Production frontend
+        "https://arfa000-hackathon2-phase3-aichatbot.hf.space"  # Production backend (for same-origin requests if needed)
+    ],  # Allow frontend origins including alternative localhost addresses and production domains
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*", "Authorization"],  # Ensure Authorization header is allowed

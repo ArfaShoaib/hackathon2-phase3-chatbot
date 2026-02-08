@@ -20,6 +20,17 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Environment Variables
+
+Create a `.env.local` file in the root of the frontend directory with the following content:
+
+```bash
+# Backend API URL
+NEXT_PUBLIC_API_URL=https://arfa000-hackathon2-phase3-aichatbot.hf.space
+```
+
+For production deployment on Vercel, make sure to set this environment variable in the Vercel dashboard.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

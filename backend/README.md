@@ -113,6 +113,16 @@ All task endpoints require authentication via JWT token in Authorization header.
 - `PATCH /api/{user_id}/tasks/{task_id}/complete` - Update task completion status
 - `DELETE /api/{user_id}/tasks/{task_id}` - Delete a task
 
+## CORS Configuration
+
+The backend is configured to allow requests from the following origins:
+
+- Local development: `http://localhost:3000`, `http://localhost:3001`, `http://127.0.0.1:3000`, `http://127.0.0.1:3001`
+- Production frontend: `https://hackathon2-phase3-chatbot.vercel.app`
+- Production backend: `https://arfa000-hackathon2-phase3-aichatbot.hf.space`
+
+If you need to add additional origins, modify the `allow_origins` list in `main.py`.
+
 ## Security Features
 
 - Passwords are securely hashed using bcrypt with 12 rounds
